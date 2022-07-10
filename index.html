@@ -14,45 +14,61 @@
     <div class="container">
         <div class="content">
             <div class="card-container">
-                <div class="card" onclick="window.open('https://kanji.garden/')";">
+                <div class="card" onclick="window.open('https://kanji.garden/')" ;">
                     <h2>Kanji Garden</h3>
-                    <p>Learn Kanji</p>
+                        <p>Learn Kanji</p>
                 </div>
-                <div class="card" onclick="window.open('./workbook.pdf')";>
+                <div class="card" onclick="window.open('./workbook.pdf')" ;>
                     <h2>Genki I Workbook</h2>
                     <p>Offical Genki I workbook</p>
                 </div>
-                <div class="card" onclick="window.open('https://www.renshuu.org')";>
+                <div class="card" onclick="window.open('https://www.renshuu.org')" ;>
                     <h2>Renshu</h2>
                     <p>Renshu a website that leads you<br>your journey</p>
                 </div>
-                <div class="card" onclick="window.open('https://sethclydesdale.github.io/genki-study-resources/lessons-3rd/')";>
+                <div class="card"
+                    onclick="window.open('https://sethclydesdale.github.io/genki-study-resources/lessons-3rd/')" ;>
                     <h2>Genki I Practice</h2>
                     <p>A place to supplemnt your Genki I knowledge</p>
                 </div>
-                <div class="card" onclick="window.open('https://www.unagibun.com/jlpt-online/')";>
+                <div class="card" onclick="window.open('https://www.unagibun.com/jlpt-online/')" ;>
                     <h2>Mock JLPT Test</h2>
                     <p>A place to take a mock JLPT test</p>
                 </div>
-                <div class="card" onclick="window.open('./textbook.pdf')";>
+                <div class="card" onclick="window.open('./textbook.pdf')" ;>
                     <h2>Genki I textbook</h2>
                     <p>The best textbook for japanese learing</p>
                 </div>
-                <div class="card" onclick="window.open('https://www.tofugu.com/japanese/learn-hiragana/')";>
+                <div class="card" onclick="window.open('https://www.tofugu.com/japanese/learn-hiragana/')" ;>
                     <h2>Hirigana</h2>
                     <p>A guide to learn hirigana</p>
                 </div>
-                <div class="card" onclick="window.open('https://kanji.garden/')";> 
+                <div class="card" onclick="window.open('https://kanji.garden/')" ;>
                     <h2>Tofugu kana</h2>
                     <p>A place to practice your kana(hirgana/katakana)</p>
                 </div>
-                <div class="card" onclick="window.open('https://www.kanshudo.com/collections/vocab_kanji_useful')";>
+                <div class="card" onclick="window.open('https://www.kanshudo.com/collections/vocab_kanji_useful')" ;>
                     <h2>Vocabulary</h2>
                     <p>A place to expand your japanese vocabulary</p>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        let root = document.querySelector(':root');
+        let i = 1;
+        let template = "./assets/${i}.png"
+        const interval = setInterval(() => {
+            if (i < 5) {
+                i++;
+                console.log(template)
+            }else {
+                i = 1;
+                
+            }
+            console.log(i)
+        }, 500);
+    </script>
 </body>
 
 </html>
