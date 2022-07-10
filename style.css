@@ -42,3 +42,20 @@ body {
     align-items: center;
     background-color: rgb(219, 162, 4);
 }
+
+@media only screen and (max-width: 400px) {
+    body {
+        overflow: scroll;
+    }
+    .card {
+        height: 10vh;
+        width:100vw;
+        border-radius: 0;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+    }
+}
