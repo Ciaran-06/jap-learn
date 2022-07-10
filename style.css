@@ -3,6 +3,8 @@
 * {
     margin: 0;
     padding: 0;
+    color: white;
+    font-weight: 1000;
     font-size: large;
 }
 
@@ -16,6 +18,10 @@ h2,
 p,
 a {
     font-size: larger;
+}
+
+a {
+    color: black;
 }
 
 .container {
